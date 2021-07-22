@@ -17,8 +17,8 @@ and returns the first document that matches.
 
 .. tabs::
 
-   .. tab:: Basic
-      :tabid: Basic
+   .. tab:: Minimal
+      :tabid: Minimal
 
       .. literalinclude:: /includes/usage-examples/findOneShort.go
          :start-after: begin findOneUsageExample
@@ -27,8 +27,8 @@ and returns the first document that matches.
          :emphasize-lines: 3
          :dedent:
 
-   .. tab:: Error Handling
-      :tabid: Error Handling
+   .. tab:: With Error Handling
+      :tabid: With Error Handling
 
       .. literalinclude:: /includes/usage-examples/findOneWithError.go
          :start-after: begin findOneUsageExample
@@ -36,6 +36,12 @@ and returns the first document that matches.
          :language: go
          :emphasize-lines: 3
          :dedent:
+
+   .. tab:: Fully Runnable
+      :tabid: Fully Runnable
+
+      .. include:: /includes/usage-examples/findOneFull.go
+         :language: go
 
 Expected Result
 ---------------
