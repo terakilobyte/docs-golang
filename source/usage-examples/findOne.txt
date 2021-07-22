@@ -27,20 +27,10 @@ and returns the first document that matches.
          :emphasize-lines: 3
          :dedent:
 
-   .. tab:: With Error Handling
-      :tabid: With Error Handling
-
-      .. literalinclude:: /includes/usage-examples/findOneWithError.go
-         :start-after: begin findOneUsageExample
-         :end-before: end findOneUsageExample
-         :language: go
-         :emphasize-lines: 3
-         :dedent:
-
    .. tab:: Fully Runnable
       :tabid: Fully Runnable
 
-      .. include:: /includes/usage-examples/findOneFull.go
+      .. literalinclude:: /includes/usage-examples/findOneFull.go
          :language: go
 
 Expected Result
