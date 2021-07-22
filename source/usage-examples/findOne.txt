@@ -3,3 +3,42 @@ Find a Document
 ===============
 
 .. default-domain:: mongodb
+
+You can find a single document in a collection using the ``FindOne()`` method.
+
+This example calls the ``FindOne()`` method with a *query filter*. A query
+filter contains the criteria for which documents to match. In this example,
+the query filter matches documents in the ``movies`` collection that have
+the value "The Room" in the ``title`` field. ``FindOne()`` will return the
+first document that matches the filter.
+
+.. literalinclude:: /includes/usage-examples/findOneShort.go
+   :start-after: begin findOneUsageExample
+   :end-before: end findOneUsageExample
+   :language: go
+   :copyable:
+   :emphasize-lines: 3
+
+Expected Output
+---------------
+
+When executed against a MongoDB cluster loaded with the :atlas:`sample dataset <sample-data>`,
+the example will print out a single document similar to the following:
+
+.. code-block:: json
+
+   // results truncated
+   {
+       "title": "The Room",
+       "writers": [
+           "Tommy Wiseau"
+       ],
+       ...
+   }
+
+Additional Information
+----------------------
+
+.. godoc1 does not include the corresponding fundamental page
+
+For more information on the ``FindOne`` method, visit our :go-api:`API documentation <mongo#Collection.FindOne>`
