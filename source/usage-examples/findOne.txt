@@ -15,12 +15,27 @@ and returns the first document that matches.
    Read the :doc:`usage example guide </usage-examples>` to learn how to
    run this example.
 
-.. literalinclude:: /includes/usage-examples/findOneShort.go
-   :start-after: begin findOneUsageExample
-   :end-before: end findOneUsageExample
-   :language: go
-   :emphasize-lines: 3
-   :dedent:
+.. tabs::
+
+   .. tab:: Basic
+      :tabid: Basic
+
+      .. literalinclude:: /includes/usage-examples/findOneShort.go
+         :start-after: begin findOneUsageExample
+         :end-before: end findOneUsageExample
+         :language: go
+         :emphasize-lines: 3
+         :dedent:
+
+   .. tab:: Error Handling
+      :tabid: Error Handling
+
+      .. literalinclude:: /includes/usage-examples/findOneWithError.go
+         :start-after: begin findOneUsageExample
+         :end-before: end findOneUsageExample
+         :language: go
+         :emphasize-lines: 3
+         :dedent:
 
 Expected Result
 ---------------
