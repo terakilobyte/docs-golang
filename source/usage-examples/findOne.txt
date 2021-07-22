@@ -19,7 +19,6 @@ and returns the first document that matches.
    :start-after: begin findOneUsageExample
    :end-before: end findOneUsageExample
    :language: go
-   :copyable: True
    :emphasize-lines: 3
    :dedent:
 
