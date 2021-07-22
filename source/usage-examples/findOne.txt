@@ -10,10 +10,9 @@ The following example specifies a query filter that matches documents in
 the ``movies`` collection with the value "The Room" in the ``title`` field,
 and returns the first document that matches.
 
-.. tip::
+.. note::
 
-   Read the :doc:`usage example guide </usage-examples>` to learn how to
-   run this example.
+   This example and its expected output run against the sample dataset.
 
 
 .. literalinclude:: /includes/usage-examples/findOneShort.go
