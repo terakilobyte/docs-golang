@@ -15,23 +15,13 @@ and returns the first document that matches.
    Read the :doc:`usage example guide </usage-examples>` to learn how to
    run this example.
 
-.. tabs::
-
-   .. tab:: Minimal
-      :tabid: Minimal
 
       .. literalinclude:: /includes/usage-examples/findOneShort.go
          :start-after: begin findOneUsageExample
          :end-before: end findOneUsageExample
          :language: go
-         :emphasize-lines: 3
+         :emphasize-lines: 5
          :dedent:
-
-   .. tab:: Fully Runnable
-      :tabid: Fully Runnable
-
-      .. literalinclude:: /includes/usage-examples/findOneFull.go
-         :language: go
 
 Expected Result
 ---------------
@@ -51,9 +41,8 @@ Expected Result
 Additional Information
 ----------------------
 
-..
-  For more information on find operations and specifying query filters, see
-  our guide on <TODO: link to fundamental find operation>.
+For more information on find operations, specifying query filters, and
+handling potential errors, see our guide on <TODO: link to fundamental find operation>.
 
 API Documentation
 ~~~~~~~~~~~~~~~~~
