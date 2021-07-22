@@ -5,8 +5,6 @@ Find a Document
 .. default-domain:: mongodb
 
 You can find a single document in a collection using the ``FindOne()`` method.
-This is equivalent to using the ``Find()`` method and limiting the results to
-one document.
 
 The following example specifies a query filter that matches documents in
 the ``movies`` collection with the value "The Room" in the ``title`` field,
