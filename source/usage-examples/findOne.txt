@@ -16,12 +16,12 @@ and returns the first document that matches.
    run this example.
 
 
-      .. literalinclude:: /includes/usage-examples/findOneShort.go
-         :start-after: begin findOneUsageExample
-         :end-before: end findOneUsageExample
-         :language: go
-         :emphasize-lines: 5
-         :dedent:
+.. literalinclude:: /includes/usage-examples/findOneShort.go
+   :start-after: begin findOneUsageExample
+   :end-before: end findOneUsageExample
+   :language: go
+   :emphasize-lines: 5
+   :dedent:
 
 Expected Result
 ---------------
