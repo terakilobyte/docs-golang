@@ -41,8 +41,9 @@ Expected Result
 Additional Information
 ----------------------
 
-For more information on find operations and specifying query filters, see
-our guide on <TODO: link to fundamental find operation>.
+..
+  For more information on find operations and specifying query filters, see
+  our guide on <TODO: link to fundamental find operation>.
 
 API Documentation
 ~~~~~~~~~~~~~~~~~
