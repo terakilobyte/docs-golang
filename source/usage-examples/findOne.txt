@@ -12,7 +12,7 @@ and returns the first document that matches.
 
 .. note::
 
-   This example and its expected output run against the sample dataset.
+   This example uses the :atlas:`sample dataset </sample-data>` in an Atlas cluster.
 
 
 .. literalinclude:: /includes/usage-examples/findOneShort.go
