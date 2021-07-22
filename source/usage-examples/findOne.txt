@@ -23,7 +23,7 @@ and returns the first document that matches.
    :emphasize-lines: 5
    :dedent:
 
-Click here for the full example this snippet is extracted from.
+Click here to see a fully runnable example.
 
 Expected Result
 ---------------
