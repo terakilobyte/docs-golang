@@ -18,6 +18,7 @@ first document that matches the filter.
    :language: go
    :copyable:
    :emphasize-lines: 3
+   :dedent:
 
 Expected Output
 ---------------
