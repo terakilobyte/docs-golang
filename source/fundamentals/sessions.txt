@@ -1,6 +1,6 @@
-========
-Sessions
-========
+==================
+Causal Consistency
+==================
 
 .. default-domain:: mongodb
 
@@ -10,8 +10,7 @@ Sessions
    :depth: 2
    :class: singlecol
 
-In this guide, you can learn about **causal consistency**, **sessions**,
-and how to manage them with the |driver|.
+In this guide, you can learn about **causal consistency** in MongoDB.
 
 Causal Consistency
 ------------------
@@ -58,7 +57,14 @@ replicate those writes. Any member of the replica set may service client *reads*
 .. figure:: /figures/replica_set_no_causal.png
    :alt: An image showing a replica set with no causal consistency guarantees.
 
-   Figure 1.
+   Figure 1. Flow of Operations in a Replica Set without Enforced Causal Consistency
+
+   1. The client application writes order **234** to the primary.
+   2. The primary responds that it has successfully applied the write.
+   3. Order **234** is replicated to one of the secondaries.
+   4. The client application reads the orders collection on a secondary.
+   5. The targeted secondary hasn't seen order **234**, so it responds with no results.
+   6. Order **234** is replicated from the primary to the other secondary.
 
 
 To provide causal consistency, MongoDB uses **sessions**.
