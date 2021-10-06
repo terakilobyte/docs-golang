@@ -1,0 +1,53 @@
+========
+Sessions
+========
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+In this guide, you can learn about **causal consistency**, **sessions**,
+and how to manage them with the |driver|.
+
+Causal Consistency
+~~~~~~~~~~~~~~~~~~
+
+If one operation influences a subsequent read or write
+operation, these two operations have a causal relationship.
+For example, updating stock quantity *after* checking to ensure enough
+stock to fulfill a purchase order is a causal relationship.
+
+**Causal consistency** is the notion that all causally-related operations
+should appear in the same order on all processes - that means every
+member of a replica set or sharded cluster in MongoDB. Single node
+databases - where only one node (or server) is running - are naturally causally
+consistent.
+
+To maintain causal consistency, the following guarantees must be satisfied:
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+
+   * - **Read your writes**
+     - Read operations reflect the results of write operations that precede them.
+   * - **Monotonic reads**
+     - Read operations do not return results that correspond to an earlier
+       state of the data than a preceding read operation.
+   * - **Monotonic writes**
+     - Write operations that must precede other writes are executed before those
+       other writes.
+   * - **Writes follow reads**
+     - Write operations that must occur after read operations are executed after
+       those read operations.
+
+
+
+To provide causal consistency, MongoDB uses **sessions**.
+
+Sessions
+~~~~~~~~
