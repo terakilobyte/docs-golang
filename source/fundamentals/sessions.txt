@@ -14,7 +14,7 @@ In this guide, you can learn about **causal consistency**, **sessions**,
 and how to manage them with the |driver|.
 
 Causal Consistency
-~~~~~~~~~~~~~~~~~~
+------------------
 
 If one operation influences a subsequent read or write
 operation, these two operations have a causal relationship.
@@ -45,6 +45,20 @@ To maintain causal consistency, the following guarantees must be satisfied:
      - Write operations that must occur after read operations are executed after
        those read operations.
 
+Benefits
+~~~~~~~~
+
+To understand the benefits of causal consistency and whether you require it,
+consider the following example where **no** causal ordering is enforced.
+
+The distributed system depicted below is a replica set with a primary (or leader)
+that accepts all incoming client *writes* and two secondaries (or followers) that
+replicate those writes. Any member of the replica set may service client *reads*.
+
+.. figure:: /figures/replica_set_no_causal.png
+   :alt: An image showing a replica set with no causal consistency guarantees.
+
+   Figure 1.
 
 
 To provide causal consistency, MongoDB uses **sessions**.
