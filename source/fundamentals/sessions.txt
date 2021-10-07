@@ -89,11 +89,10 @@ orbiting another planet.
    ping times from Earth to Mars can range from ~3.5 minutes to ~15 minutes.
 
 
-Let's revisit the previous example, but now with causal consistency enforced.
-
 Illustrated Example, Causal Consistency
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The following diagram depicts a replica set with causal consistency enforced.
 
 .. figure:: /figures/replica_set_with_causal.png
     :alt: An image showing a replica set with causal consistency guarantees.
@@ -106,11 +105,16 @@ Illustrated Example, Causal Consistency
     6. Order **234** is replicated from the primary to the other secondary.
     7. The secondary is able to respond with the contents of order **234**.
 
+The client makes an order through the application. The application writes the
+order to the primary, incrementing the clock. The client reads from a secondary,
+also sending its' updated clock. The targeted secondary hasn't seen the write yet
+**and** its clock is behind the primary's clock, so it must wait to respond. The write
+is replicated to the secondary and the clock times sync, so the secondary is able
+to respond to the read.
+
 To learn more about causal consistency, see the following resources:
 - :manual:`The MongoDB Manual entry </core/causal-consistency-read-write-concerns/>`
 - `The MongoDB Engineering blog article <https://engineering.mongodb.com/post/ryp0ohr2w9pvv0fks88kq6qkz9k9p3>`__
 
-To provide causal consistency, MongoDB uses **sessions**.
-
 Sessions
-~~~~~~~~
+--------
