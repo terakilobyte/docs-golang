@@ -1,6 +1,6 @@
-==================
-Causal Consistency
-==================
+===============================
+Causal Consistency and Sessions
+===============================
 
 .. default-domain:: mongodb
 
@@ -10,14 +10,15 @@ Causal Consistency
    :depth: 2
    :class: singlecol
 
-In this guide, you can learn about **causal consistency** in MongoDB.
+In this guide, you can learn about **causal consistency** and **sessions**
+in MongoDB.
 
 Causal Consistency
 ------------------
 
 If one operation influences a subsequent read or write
 operation, these two operations have a causal relationship.
-For example, updating stock quantity *after* checking to ensure enough
+For example, updating item quantity *after* checking to ensure enough
 stock to fulfill a purchase order is a causal relationship.
 
 **Causal consistency** is the notion that all causally-related operations
@@ -81,6 +82,13 @@ latest time in every message. This allows all participants to converge on the
 latest time, regardless of if they are in another city, another country, or
 orbiting another planet.
 
+.. tip:: Adjust Latency Tolerances
+
+   When deploying a solar system-wide cluster, MongoDB recommends timeouts
+   are adjusted to accommodate the latency of the network. For example,
+   ping times from Earth to Mars can range from ~3.5 minutes to ~15 minutes.
+
+
 Let's revisit the previous example, but now with causal consistency enforced.
 
 Illustrated Example, Causal Consistency
@@ -98,6 +106,9 @@ Illustrated Example, Causal Consistency
     6. Order **234** is replicated from the primary to the other secondary.
     7. The secondary is able to respond with the contents of order **234**.
 
+To learn more about causal consistency, see the following resources:
+- :ref:`<causal_consistency_and_read_and_write_concerns>`
+- `The MongoDB Engineering blog article <https://engineering.mongodb.com/post/ryp0ohr2w9pvv0fks88kq6qkz9k9p3>`__
 
 To provide causal consistency, MongoDB uses **sessions**.
 
