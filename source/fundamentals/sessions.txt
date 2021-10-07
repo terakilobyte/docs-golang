@@ -113,6 +113,7 @@ is replicated to the secondary and the clock times sync, so the secondary is abl
 to respond to the read.
 
 To learn more about causal consistency, see the following resources:
+
 - :manual:`The MongoDB Manual entry </core/causal-consistency-read-write-concerns/>`
 - `The MongoDB Engineering blog article <https://engineering.mongodb.com/post/ryp0ohr2w9pvv0fks88kq6qkz9k9p3>`__
 
