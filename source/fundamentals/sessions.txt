@@ -107,7 +107,7 @@ Illustrated Example, Causal Consistency
     7. The secondary is able to respond with the contents of order **234**.
 
 To learn more about causal consistency, see the following resources:
-- :ref:`<causal_consistency_and_read_and_write_concerns>`
+- :manual:`The MongoDB Manual entry </core/causal_consistency_read_write_concerns/>`
 - `The MongoDB Engineering blog article <https://engineering.mongodb.com/post/ryp0ohr2w9pvv0fks88kq6qkz9k9p3>`__
 
 To provide causal consistency, MongoDB uses **sessions**.
