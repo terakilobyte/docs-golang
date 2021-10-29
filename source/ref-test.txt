@@ -8,20 +8,20 @@ Ref Testing
 
    .. replacement:: ref-1
 
-      .. _ref-1-golang:
+      .. _foo-go-ref-1:
 
    .. replacement:: ref-2
 
-      .. _ref-2-golang:
+      .. _foo-go-ref-2:
 
    .. replacement:: ref-3
 
-      .. _ref-3-golang:
+      .. _foo-go-ref-3:
 
    .. replacement:: ref-4
 
-      .. _ref-4-golang:
+      .. _foo-go-ref-4:
 
    .. replacement:: ref-5
 
-      .. _ref-5-golang:
+      .. _foo-go-ref-5:
