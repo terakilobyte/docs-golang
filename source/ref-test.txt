@@ -1,0 +1,27 @@
+===========
+Ref Testing
+===========
+
+.. default-domain:: mongodb
+
+.. sharedinclude:: shared-content-ref-test/ref-test.rst
+
+   .. replacement:: ref-1
+
+      .. _ref-1-golang:
+
+   .. replacement:: ref-2
+
+      .. _ref-2-golang:
+
+   .. replacement:: ref-3
+
+      .. _ref-3-golang:
+
+   .. replacement:: ref-4
+
+      .. _ref-4-golang:
+
+   .. replacement:: ref-5
+
+      .. _ref-5-golang:

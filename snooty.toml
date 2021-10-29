@@ -6,6 +6,8 @@ toc_landing_pages = [
     "/usage-examples"
 ]
 
+sharedinclude_root = "https://raw.githubusercontent.com/10gen/docs-shared/main"
+
 intersphinx = [
   "https://docs.mongodb.com/manual/objects.inv",
   "https://docs.atlas.mongodb.com/objects.inv",
@@ -16,3 +18,5 @@ docs-branch = "master" # always set this to the docs branch (i.e. master, 1.7, 1
 version = "v1.7.2" # always set this to the driver branch (i.e. v1.7.0, v1.8.0, etc.)
 example = "https://raw.githubusercontent.com/mongodb/docs-golang/{+docs-branch+}/source/includes/usage-examples/code-snippets"
 api = "https://pkg.go.dev/go.mongodb.org/mongo-driver@{+version+}"
+project="golang"
+

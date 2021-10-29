@@ -16,11 +16,12 @@ MongoDB Go Driver
    /compatibility
    Release Notes <https://github.com/mongodb/mongo-go-driver/releases>
    View the Source <https://github.com/mongodb/mongo-go-driver>
+   /ref-test
 
 Introduction
 ------------
 
-Welcome to the MongoDB Go driver documentation. 
+Welcome to the MongoDB Go driver documentation.
 
 Connect your Go applications to MongoDB and work with your data using
 the official Go driver. On this page, you can find descriptions of each
