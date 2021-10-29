@@ -25,3 +25,6 @@ Ref Testing
    .. replacement:: ref-5
 
       .. _foo-go-ref-5:
+
+
+.. _some-ref-{+project+}:
